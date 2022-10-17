@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  conv-temp:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      - "${CUSTOM_PORT:-8080}:8080"
